@@ -17,7 +17,7 @@ body {
     padding: 0;
     line-height: 1;
 }
-ol, ul,li {
+ol, li {
     list-style: none;
 }
 a{
@@ -42,10 +42,10 @@ https://en.bem.info/methodology/quick-start/*/
       /*Header*/
 
 section.menu{
-    position: fixed;
+        background-color: #EAF2FD;
+        position: fixed;
         font-size: 1rem;
         width: 100%;
-        
         display:flex;    
         padding-inline-start: 250px;
         white-space: nowrap; 
@@ -90,13 +90,53 @@ flex-wrap: nowrap;
 
 /*Sessão Title "Olá. meu nome é fulana" */
 
+
 section.title{
+
+    padding-inline-start: 250px;
+    align-items: center;
+    padding-top: 120px;
+    width:1200px;
+}
+
+.title__div{
+     max-width: 950px;
+    display: flex;
+    flex-direction: row-reverse;
+
 
 }
 
-/*Sessão About "Sobre Mim" e "Skills" */
+.title__container{
+    display: flex;
+    flex-direction: column;
+    width: 751px;
+
+}
+
+.title__profile {
+    padding-left: 40px;
+    width: 280px;
+    height: 280px; 
+}
+
+.title__network{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+
+/*Sessão About "Sobre Mim"*/
 
 section.about{
+
+}
+
+.title__div{
+    width: 1136px;
+
 
 }
 
