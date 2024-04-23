@@ -45,6 +45,7 @@ section.menu{
     position: fixed;
         font-size: 1rem;
         width: 100%;
+        
         display:flex;    
         padding-inline-start: 250px;
         white-space: nowrap; 
