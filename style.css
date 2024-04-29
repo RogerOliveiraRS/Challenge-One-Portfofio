@@ -41,45 +41,47 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sessão Menu "Cabeçalho" */
       /*Header*/
 
-section.menu{
-        background-color: #EAF2FD;
-        position: fixed;
-        font-size: 1rem;
-        width: 100%;
-        display:flex;    
-        padding-inline-start: 250px;
-        white-space: nowrap; 
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
-
 header{
-    display: flex;
-    flex-direction: row;
+    background-color: #EAF2FD;
+    position: fixed;
+    font-size: 1rem;
+    width: 100vw;
+    display:flex; 
+    flex-direction: row;   
+    padding-left:  18vw;
     white-space: nowrap; 
-    font-size: 1rem; 
-    font-weight: bold;
-    gap: 0.7rem; 
-    padding-top: 16px;
-    padding-right: 4rem;
+    padding-top: 2%;
+    padding-bottom: 5% 
 }
 
-header img {
-    width: 1rem;
-    height: 16px; 
+.apresenta__cabecalho{
+    padding-top: 14px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: initial;
+    white-space: nowrap; 
+    font-size: 1.25rem; 
+    font-weight: bold;
+    row-gap: 0.6vw; 
+    padding-right: 4vw;
+}
+
+.cabecalho__menu__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 10vw;
 }
 
 nav{
-display: flex;
-flex-wrap: nowrap;
-}
-
-.menu__list{
     display: flex;
     flex-direction: row;
-}
+    flex-wrap: wrap;
+    padding-right: 10vw;
+    }
+
 .menu__list__item{
-   padding-right: 16px;
+   padding-right: 2vw;
  }
 
  .menu__list__item__contato{
@@ -88,19 +90,25 @@ flex-wrap: nowrap;
 
 
 
-/*Sessão Title "Olá. meu nome é fulana" */
+/*Sessão Title "Olá. meu nome é fulano" */
 
 
 section.title{
 
-    padding-inline-start: 250px;
+ 
     align-items: center;
-    padding-top: 120px;
-    width:1200px;
+    padding-top: 200px;
+    width:100vw;
+    padding-bottom: 120px;    
+}
+
+.title{
+
+    padding-left: 14vw;
 }
 
 .title__div{
-     max-width: 950px;
+    max-width: 70vw;
     display: flex;
     flex-direction: row-reverse;
 
@@ -110,20 +118,31 @@ section.title{
 .title__container{
     display: flex;
     flex-direction: column;
-    width: 751px;
+    width: 60%;
+    padding-top: 20px;
 
 }
 
 .title__profile {
-    padding-left: 40px;
-    width: 280px;
-    height: 280px; 
+    padding-top: 35px;
+    padding-left: 8vw;
+    width: 17vw;
+    height: 17vw; 
 }
 
 .title__network{
+    padding-top: 100px;
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 10vw;
+}
+
+.title__network__item img{
+margin-top: 16px;
+}
+
+.title__network img{
+    width: 40px;
 }
 
 
@@ -131,51 +150,257 @@ section.title{
 /*Sessão About "Sobre Mim"*/
 
 section.about{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    background-color: #EAF2FD;
 
 }
 
-.title__div{
-    width: 1136px;
 
+.about__container{ 
+    align-items: center;
+    padding-top: 120px;
+    width:70vw;
+    padding-bottom: 100px;
+    padding-left: 16vw;
+ 
 
 }
+
+
 
 /*Sessão Skills*/
 
 section.skills{
-    
+    padding-left: 16vw;
+    padding-top: 40px;
+    width:70vw;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
 }
 
 
-/*Sessão Hobbies*/
-
-section.hobbies{
-    
+.skills__line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 5vw;
+    column-gap: 20px;
+    align-items:  baseline;   
 }
+
+.skills__box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.skills__box img{  
+    justify-content: center;
+    width: 50px;
+    height: auto;
+}
+
+.skills__name{
+    margin-top: 10px;
+    align-items: bottom;
+}
+
 
 /* Experiência Acadêmica*/
 
 section.academic{
+    background-color: #EAF2FD;
+    padding-left: 16vw;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 
+section.academic img{
+    width: 50px;
+    height: auto;
+    padding-right: 2vw;
+}
+
+.academic__courses{
+    padding-right: 12vw;
+
+}
+
+.formacao__curso{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.formacao__curso__detalhes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
 }
 
 /* experiência*/
 
 section.experience{
-
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
 }
+
+.experience{
+    padding-bottom: 40px;
+    padding-left: 9vw;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+}
+
+.experience__box img{
+   width: 200px;
+   height: auto;
+}
+
+
+.experience__info{
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.experience__title{
+    padding-bottom: 12px;
+} 
+
+.experience__section__title{
+    padding-bottom: 36px;
+} 
+
+.experience__text{
+    padding-bottom: 12px;
+}
+
+.experience__description{
+    display: flex;
+    flex-direction: wrap; 
+    flex-wrap: wrap;
+    gap: 19px;
+    padding-bottom: 20px;
+}
+
+.experiencia__botao--repo {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branca */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+.experiencia__botao--repo:hover  {
+    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+.experiencia__botao--demo__1:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+.experiencia__botao--demo__2:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+
+.experiencia__botao--repo {
+        background-color: #007bff; /* Cor de fundo azul */
+        color: #fff; /* Cor do texto branca */
+        border: none; /* Sem borda */
+        padding: 10px 20px; /* Espaçamento interno */
+        font-size: 16px; /* Tamanho da fonte */
+        cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+.experiencia__botao--demo__1 {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branca */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+.experiencia__botao--demo__2 {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branca */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+
+
+
+
+
 
 /*Contato*/
 
 section.formcontato{
+background-color: #fff;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+}
+.formcontato__contacto{
+    padding-bottom: 40px;
+    padding-left: 16vw;
+    padding-top: 40px;
+    width:70vw;
+}
+
+.formcontato__contacto {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+}
+
+.formcontato__text {
+    margin-bottom: 20px; /* Espaçamento abaixo do texto */
+}
+
+.formcontato__input,
+.formcontato__textarea,
+.formcontato__botao {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Espaçamento vertical entre os elementos */
+}
+
+
+.formcontato__form{
 
 }
+
+
 
 /*footeer*/
 
 section.footer{
    
 }
+
+
+
+
+
 
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
