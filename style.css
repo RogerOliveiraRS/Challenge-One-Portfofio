@@ -1,60 +1,32 @@
-/*CSS Reset / Normalize*/
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
-
-:root{
-    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
-}
 
 body {
+    background-color: #0E0D11;
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
+    font-family: 'arial';
     margin: 0;
     padding: 0;
     line-height: 1;
+    color: #ffffff;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
 }
+
 ol, li {
     list-style: none;
+    color: inherit;
 }
+ 
 a{
+    color: inherit;
+    list-style: none;
     text-decoration: none;
-    color: var(--cor-de-link);
-}
+    }
+    
 
-/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
-de utiliza-la. 
 
-Mas o que é o BEM?
 
-BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
-web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
-Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
-de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
-
-Link da documentação oficial!
-https://en.bem.info/methodology/quick-start/*/
-
-/*Sessão Menu "Cabeçalho" */
-      /*Header*/
-
-      /*.apresenta__cabecalho{
-    padding-top: 2%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: initial;
-    white-space: nowrap; 
-    font-size: 1.25rem; 
-    font-weight: 200;
-    row-gap: 0.6vw; 
-    padding-right: 4vw;
-}*/
-
-header {
-    background-color: #EAF2FD;
+header{
+    background-color: #00111D;
     position: fixed;  
     display:flex; 
     flex-direction: row;   
@@ -62,17 +34,18 @@ header {
     white-space: nowrap; 
     padding-top: 18px;
     padding-bottom: 5%; 
-    border-bottom: 0.2vw solid black; 
+    border-bottom: 0.15vw solid orange;
     padding-bottom: 2vw;
-    width:100%
+    width:100%;
+    align-items: center;
+    color: #ffffff;
 }
 
-
-
-
 .apresenta__cabecalho{
+    align-items: center;
     padding-top: 14px;
     padding-left: 8vw;
+    padding-bottom: 14px;
     display: flex;
     flex-direction: row;
     flex-wrap: initial;
@@ -80,15 +53,21 @@ header {
     font-size: 22px; 
     font-weight: 200;
     row-gap: 0.6vw; 
-    padding-right: 4vw;
+    padding-right: 4vw;    
 }
+
+    .apresenta__cabecalho__logo img{
+    width: 30px;
+    height: auto;
+    padding-right: 10px;
+    }
 
 .cabecalho__menu__list{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-right: 10vw;
-
+    color: #ffffff;
 }
 
 nav{
@@ -96,14 +75,17 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     padding-right: 15vw;
-    font-size: clamp(1.3vw, 0.6vw, 0,6vw);
+    font-size: clamp(1.3vw, 0.6vw, 0,6vw); 
+    color: #ffffff;
     }
 
 .menu__list__item{
    padding-right: 2vw;
+   color: #EAF2FD;
  }
 
  .menu__list__item__contato{
+    color: #EAF2FD;
     padding-top: 32px;
  }
 
@@ -119,11 +101,12 @@ section.title{
     align-items: center;
     padding-top: 140px;
     width:100vw;
-    padding-bottom: 120px;    
+    padding-bottom: 120px;  
+    color: #ffffff; 
+    background-color: #00111D; 
 }
 
 .title{
-
     padding-left: 14vw;
 }
 
@@ -172,10 +155,12 @@ text-align: start;
 row-gap: 10px;
 grid-template-columns: auto 1fr;
 text-align: start;
+color: black;
+
 }
 
 .links img{
-    width: 40px;
+    width: 80px;
     height: auto;
     padding-top: 16px;
 }
@@ -188,14 +173,24 @@ text-align: start;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10vw;
+    color: #EAF2FD;
 }
 
 .links__network__item{
-    flex-direction: column;
+    color: #00111D;
+    display: flex;
+    align-items: self-end;
+    background: #FFFFFF;
+    width: 11rem;
+    height: 10.85rem;
+    border-radius: 1vw;
     align-items: center;
-    justify-items: flex-end;
+    justify-content: center;
+}  
 
-}
+
+
+
 
 
 
@@ -211,7 +206,7 @@ section.about{
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
-    background-color: #EAF2FD;
+
 }
 
 .about__paragraph{
@@ -241,37 +236,44 @@ section.skills{
     flex-direction: column; 
     flex-wrap: wrap;
     border-bottom: 0.2vw solid orange; 
-    padding-bottom: 2vw;
+    padding-bottom: 5vw;
     width: auto;
 }
 
-
-.skills__line{
+.skills__line {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 5vw;
     column-gap: 20px;
-    align-items:  baseline; 
+    align-items: baseline; /* Alinhe na linha de base */
     padding-right: 15vw;
 }
-
 
 .skills__line ul{
     align-items: center;
 }
 
-.skills__box{
+.skills__box {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-
+    background: #FFFFFF;
+    width: 11rem;
+    height: 10.85rem; /* Ajuste conforme necessário */
+    color: #00111D;
+    border-radius: 1vw;
 }
 
 .skills__box img{  
+    align-items: center;
     justify-content: center;
-    width: 50px;
+    width: 60px;
     height: auto;
+}
+
+.skills__box ul{
+    align-items: center;
+    margin: 16px;
 }
 
 .skills__name{
@@ -286,7 +288,7 @@ section.academic{
     border-bottom: 0.2vw solid orange; 
     padding-bottom: 2vw;
     width: auto;
-    background-color: #EAF2FD;
+
     padding-left: 16vw;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -300,6 +302,10 @@ section.academic img{
 
 .academic__courses{
     padding-right: 12vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4vw;
 
 }
 
@@ -307,20 +313,32 @@ section.academic img{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-top: 30px;
+
+    padding-right: 3vw;
 }
+
+.formacao__curso__list{
+    border: #FFFFFF;
+    border-radius: 1vw;
+    background: #EAF2FD;
+    color: #00111D;
+    align-items: center;
+}
+
+
 
 .formacao__curso__detalhes{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-right: 3vw;
   
 }
 
 /* experiência*/
 
 section.experience{
-    background-color: #fff;
+
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
@@ -447,6 +465,7 @@ section.formcontato{
     padding-left: 16vw;
     padding-top: 40px;
     width:70vw;
+    background-color: #00111D;
 }
 
 .formcontato__contacto {
