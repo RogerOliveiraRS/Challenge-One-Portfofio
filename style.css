@@ -1,12 +1,12 @@
 
 body {
-    background-color: #0E0D11;
+    background-color: #021635;
     box-sizing: border-box;
     font-family: 'arial';
     margin: 0;
     padding: 0;
     line-height: 1;
-    color: #ffffff;
+    color: #eff4fd;
     line-height: 1.5;
     letter-spacing: 0.03em;
 }
@@ -26,7 +26,6 @@ a{
 
 
 header{
-    background-color: #00111D;
     position: fixed;  
     display:flex; 
     flex-direction: row;   
@@ -95,7 +94,7 @@ nav{
 
 
 section.title{
-    border-bottom: 0.2vw solid orange; 
+    border-bottom: 0.15vw solid orange; 
     padding-bottom: 2vw;
     width: auto;
     align-items: center;
