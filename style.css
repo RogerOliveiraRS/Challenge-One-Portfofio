@@ -41,28 +41,45 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sessão Menu "Cabeçalho" */
       /*Header*/
 
-header{
-    background-color: #EAF2FD;
-    position: fixed;
-    font-size: 1rem;
-    width: 100vw;
-    display:flex; 
-    flex-direction: row;   
-    padding-left:  18vw;
-    padding-right: 5vw;
-    white-space: nowrap; 
+      /*.apresenta__cabecalho{
     padding-top: 2%;
-    padding-bottom: 5% 
-}
-
-.apresenta__cabecalho{
-    padding-top: 14px;
     display: flex;
     flex-direction: row;
     flex-wrap: initial;
     white-space: nowrap; 
     font-size: 1.25rem; 
-    font-weight: bold;
+    font-weight: 200;
+    row-gap: 0.6vw; 
+    padding-right: 4vw;
+}*/
+
+header {
+    background-color: #EAF2FD;
+    position: fixed;
+  
+    display:flex; 
+    flex-direction: row;   
+    padding-left:  9vw;  
+    white-space: nowrap; 
+    padding-top: 2%;
+    padding-bottom: 5%; 
+    border-bottom: 0.2vw solid black; 
+    padding-bottom: 2vw;
+    width:100%
+}
+
+
+
+
+.apresenta__cabecalho{
+    padding-top: 18px;
+    padding-left: 8vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: initial;
+    white-space: nowrap; 
+    font-size: 22px; 
+    font-weight: 200;
     row-gap: 0.6vw; 
     padding-right: 4vw;
 }
@@ -72,13 +89,15 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     padding-right: 10vw;
+
 }
 
 nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-right: 10vw;
+    padding-right: 15vw;
+    font-size: clamp(1.3vw, 0.6vw, 0,6vw);
     }
 
 .menu__list__item{
@@ -95,10 +114,11 @@ nav{
 
 
 section.title{
-
- 
+    border-bottom: 0.2vw solid orange; 
+    padding-bottom: 2vw;
+    width: auto;
     align-items: center;
-    padding-top: 200px;
+    padding-top: 140px;
     width:100vw;
     padding-bottom: 120px;    
 }
@@ -109,6 +129,7 @@ section.title{
 }
 
 .title__div{
+    padding-top: 8vw;
     max-width: 70vw;
     display: flex;
     flex-direction: row-reverse;
@@ -122,10 +143,19 @@ section.title{
     width: 60%;
     padding-top: 20px;
 
+
+}
+
+.title__bio{
+    padding-bottom: 1.5rem;
+}
+
+.title__subsection{
+    font-size: 20px;
 }
 
 .title__profile {
-    padding-top: 35px;
+    padding-top: 33px;
     padding-left: 8vw;
     width: 17vw;
     height: 17vw; 
@@ -167,6 +197,7 @@ text-align: start;
     flex-direction: column;
     align-items: center;
     justify-items: flex-end;
+
 }
 
 
@@ -177,22 +208,27 @@ text-align: start;
 /*Sessão About "Sobre Mim"*/
 
 section.about{
+    border-bottom: 0.2vw solid orange; 
+    padding-bottom: 2vw;
+
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
     background-color: #EAF2FD;
+}
 
+.about__paragraph{
+    font-size: 20px;
+    width: 70wv;
 }
 
 
 .about__container{ 
     align-items: center;
     padding-top: 120px;
-    width:70vw;
+    padding-right: 15vw;
     padding-bottom: 100px;
     padding-left: 16vw;
- 
-
 }
 
 
@@ -201,12 +237,15 @@ section.about{
 
 section.skills{
     padding-left: 16vw;
-    padding-top: 40px;
+    padding-top: 100px;
     width:70vw;
     padding-bottom: 80px;
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
+    border-bottom: 0.2vw solid orange; 
+    padding-bottom: 2vw;
+    width: auto;
 }
 
 
@@ -216,7 +255,13 @@ section.skills{
     flex-wrap: wrap;
     row-gap: 5vw;
     column-gap: 20px;
-    align-items:  baseline;   
+    align-items:  baseline; 
+    padding-right: 15vw;
+}
+
+
+.skills__line ul{
+    align-items: center;
 }
 
 .skills__box{
@@ -241,6 +286,9 @@ section.skills{
 /* Experiência Acadêmica*/
 
 section.academic{
+    border-bottom: 0.2vw solid orange; 
+    padding-bottom: 2vw;
+    width: auto;
     background-color: #EAF2FD;
     padding-left: 16vw;
     padding-top: 40px;
@@ -275,33 +323,42 @@ section.academic img{
 /* experiência*/
 
 section.experience{
-    background-color: aquamarine;
+    background-color: #fff;
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
+    border-bottom: 0.2vw solid orange; 
 }
 
-.experience{
+#xp{
+    gap: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
     padding-bottom: 40px;
-    padding-left: 9vw;
+    padding-left: 10vw;
     padding-top: 40px;
-    display: flex;
-    flex-direction: column; 
-    flex-wrap: wrap;
 }
 
-.experience__box img{
-   width: 200px;
-   height: auto;
+.experience__box{
+    align-items: center;
+
 }
 
+
+.experience__box img {
+    width: 268px;
+    height: 180px;
+ /* Defina a altura mínima desejada */
+}
 
 .experience__info{
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
     font-size: 20px;
-    padding-top: 40px;
+    padding-top: 16px;
+    padding-bottom: 40px;
 }
 
 .experience__title{
@@ -309,7 +366,7 @@ section.experience{
 } 
 
 .experience__section__title{
-    padding-bottom: 36px;
+    padding-bottom: 16px;
 } 
 
 .experience__text{
@@ -382,10 +439,11 @@ section.experience{
 /*Contato*/
 
 section.formcontato{
-background-color: #fff;
+    background-color: #EAF2FD;
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
+    border-bottom: 0.2vw solid orange; 
 }
 .formcontato__contacto{
     padding-bottom: 40px;
@@ -401,6 +459,10 @@ background-color: #fff;
 
 .formcontato__text {
     margin-bottom: 20px; /* Espaçamento abaixo do texto */
+}
+
+.formcontato__contato__subtext{
+    font-size: 1.5vw;
 }
 
 .formcontato__input,
@@ -421,7 +483,21 @@ background-color: #fff;
 /*footeer*/
 
 section.footer{
-   
+    width: 100vw;
+    height: fit-content; 
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: bold
+
 }
 
 
