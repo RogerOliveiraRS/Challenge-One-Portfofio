@@ -15,29 +15,31 @@ ol, li {
     list-style: none;
     color: inherit;
 }
- 
+
 a{
     color: inherit;
     list-style: none;
     text-decoration: none;
     }
+
+    .section-divider {
+        width: 100%;
+        border-bottom: 0.15vw solid orange;
+    }
     
 
-
-
 header{
-    position: fixed;  
+    position: fixed absolute;  
     display:flex; 
     flex-direction: row;   
     padding-left:  9vw;  
     white-space: nowrap; 
     padding-top: 18px;
     padding-bottom: 5%; 
-    border-bottom: 0.15vw solid orange;
-    padding-bottom: 2vw;
+    padding-bottom: 18px;
     width:100%;
     align-items: center;
-    color: #ffffff;
+    color: #eff4fd;
 }
 
 .apresenta__cabecalho{
@@ -66,7 +68,7 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     padding-right: 10vw;
-    color: #ffffff;
+    color: #eff4fd;
 }
 
 nav{
@@ -75,34 +77,28 @@ nav{
     flex-wrap: wrap;
     padding-right: 15vw;
     font-size: clamp(1.3vw, 0.6vw, 0,6vw); 
-    color: #ffffff;
+    color: #eff4fd;
     }
 
 .menu__list__item{
-   padding-right: 2vw;
-   color: #EAF2FD;
- }
+    padding-right: 2vw;
+    color: #eff4fd;
+}
 
- .menu__list__item__contato{
-    color: #EAF2FD;
+.menu__list__item__contato{
+    color: #eff4fd;
     padding-top: 32px;
- }
+}
 
-
-
-/*Sessão Title "Olá. meu nome é fulano" */
-
-
+/*Sessão Apresentação e Redes Sociais" */
 section.title{
-    border-bottom: 0.15vw solid orange; 
-    padding-bottom: 2vw;
     width: auto;
     align-items: center;
-    padding-top: 140px;
+    padding-top: 50px;
     width:100vw;
     padding-bottom: 120px;  
-    color: #ffffff; 
-    background-color: #00111D; 
+    color: #eff4fd; 
+    background-color: #021635; 
 }
 
 .title{
@@ -110,7 +106,7 @@ section.title{
 }
 
 .title__div{
-    padding-top: 13vw;
+
     max-width: 70vw;
     display: flex;
     flex-direction: row-reverse;
@@ -120,9 +116,6 @@ section.title{
     display: flex;
     flex-direction: column;
     width: 60%;
-
-
-
 }
 
 .title__bio{
@@ -139,13 +132,6 @@ section.title{
     width: 17vw;
     height: 17vw; 
 }
-/*
-.links{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-*/
 
 .links{
 margin-top: 1rem;
@@ -155,16 +141,13 @@ row-gap: 10px;
 grid-template-columns: auto 1fr;
 text-align: start;
 color: black;
-
 }
 
 .links img{
-    width: 80px;
+    width: 70px;
     height: auto;
-    padding-top: 16px;
+    padding-top: 3.5rem;
 }
-
-
 
 .links__network{
     padding-top: 40px;
@@ -172,47 +155,40 @@ color: black;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10vw;
-    color: #EAF2FD;
+    color: #eff4fd;
+    font-size: 20px;
 }
 
 .links__network__item{
+
     color: #00111D;
     display: flex;
     align-items: self-end;
     background: #FFFFFF;
-    width: 11rem;
-    height: 10.85rem;
-    border-radius: 1vw;
+    width: 13rem;
+    height: 11rem;
+    border-radius: 0.5rem;
     align-items: center;
-    justify-content: center;
+    padding-left: 2rem;
 }  
 
-
-
-
-
-
-
-
-
+.links__network__item a{
+    padding-bottom: 3.3rem;
+}
 
 /*Sessão About "Sobre Mim"*/
-
-section.about{
-    border-bottom: 0.2vw solid orange; 
-    padding-bottom: 2vw;
-
+section.about{ 
+    padding-bottom: 1.5vw;
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
-
+    width: 100vw;
 }
 
 .about__paragraph{
     font-size: 20px;
     width: 70wv;
 }
-
 
 .about__container{ 
     align-items: center;
@@ -222,10 +198,7 @@ section.about{
     padding-left: 16vw;
 }
 
-
-
 /*Sessão Skills*/
-
 section.skills{
     padding-left: 16vw;
     padding-top: 100px;
@@ -233,8 +206,7 @@ section.skills{
     padding-bottom: 80px;
     display: flex;
     flex-direction: column; 
-    flex-wrap: wrap;
-    border-bottom: 0.2vw solid orange; 
+    flex-wrap: wrap; 
     padding-bottom: 5vw;
     width: auto;
 }
@@ -260,7 +232,7 @@ section.skills{
     width: 11rem;
     height: 10.85rem; /* Ajuste conforme necessário */
     color: #00111D;
-    border-radius: 1vw;
+    border-radius: 0.5rem;
 }
 
 .skills__box img{  
@@ -280,14 +252,10 @@ section.skills{
     align-items: bottom;
 }
 
-
 /* Experiência Acadêmica*/
-
 section.academic{
-    border-bottom: 0.2vw solid orange; 
     padding-bottom: 2vw;
     width: auto;
-
     padding-left: 16vw;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -317,31 +285,27 @@ section.academic img{
 }
 
 .formacao__curso__list{
+    width: 60vw;
     border: #FFFFFF;
-    border-radius: 1vw;
+    border-radius: 0.5rem;
     background: #EAF2FD;
     color: #00111D;
     align-items: center;
 }
-
-
 
 .formacao__curso__detalhes{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-right: 3vw;
-  
 }
 
 /* experiência*/
-
 section.experience{
 
     display: flex;
     flex-direction: column; 
-    flex-wrap: wrap;
-    border-bottom: 0.2vw solid orange; 
+    flex-wrap: wrap; 
 }
 
 #xp{
@@ -351,14 +315,13 @@ section.experience{
     flex-wrap: wrap;    
     padding-bottom: 40px;
     padding-left: 10vw;
-    padding-top: 40px;
+    padding-top: 5vw;
+
 }
 
 .experience__box{
     align-items: center;
-
 }
-
 
 .experience__box img {
     width: 268px;
@@ -396,84 +359,83 @@ section.experience{
 }
 
 .experiencia__botao--repo {
-    background-color: #007bff; /* Cor de fundo azul */
-    color: #fff; /* Cor do texto branca */
-    border: none; /* Sem borda */
-    padding: 10px 20px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
 }
 
 .experiencia__botao--repo:hover  {
-    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+    background-color: #0056b3; 
 }
 
 .experiencia__botao--demo__1:hover {
-    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+    background-color: #0056b3; 
 }
 
 .experiencia__botao--demo__2:hover {
-    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+    background-color: #0056b3; 
 }
 
-
 .experiencia__botao--repo {
-        background-color: #007bff; /* Cor de fundo azul */
-        color: #fff; /* Cor do texto branca */
-        border: none; /* Sem borda */
-        padding: 10px 20px; /* Espaçamento interno */
-        font-size: 16px; /* Tamanho da fonte */
-        cursor: pointer; /* Cursor de mão ao passar o mouse */
+        background-color: #007bff; 
+        color: #fff; 
+        border: none; 
+        padding: 10px 20px; 
+        font-size: 16px; 
+        cursor: pointer; 
 }
 
 .experiencia__botao--demo__1 {
-    background-color: #007bff; /* Cor de fundo azul */
-    color: #fff; /* Cor do texto branca */
-    border: none; /* Sem borda */
-    padding: 10px 20px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px;
+    font-size: 16px; 
+    cursor: pointer; 
 }
 
 .experiencia__botao--demo__2 {
-    background-color: #007bff; /* Cor de fundo azul */
-    color: #fff; /* Cor do texto branca */
-    border: none; /* Sem borda */
-    padding: 10px 20px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
 }
-
-
-
-
-
 
 
 /*Contato*/
-
 section.formcontato{
-    background-color: #EAF2FD;
+    width: 100vw;
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
-    border-bottom: 0.2vw solid orange; 
-}
-.formcontato__contacto{
-    padding-bottom: 40px;
-    padding-left: 16vw;
-    padding-top: 40px;
-    width:70vw;
-    background-color: #00111D;
 }
 
 .formcontato__contacto {
     display: flex;
-    flex-direction: column; /* Alinha os elementos verticalmente */
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 40px;
+    width: 70%; /* Defina a largura desejada */
+    background-color: #022256;
+    border-radius: 0.5rem;
+}
+
+.formcontato__contacto {
+    display: flex;
+    flex-direction: column;
 }
 
 .formcontato__text {
-    margin-bottom: 20px; /* Espaçamento abaixo do texto */
+    margin-bottom: 20px;
+    margin-right: auto; /* Centralize horizontalmente */
+    margin-left: auto; /* Centralize horizontalmente */
 }
 
 .formcontato__contato__subtext{
@@ -485,80 +447,90 @@ section.formcontato{
 .formcontato__botao {
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 10px; /* Espaçamento vertical entre os elementos */
+    margin-bottom: 10px;
 }
-
-
-.formcontato__form{
-
-}
-
-
 
 /*footeer*/
-
 section.footer{
     width: 100vw;
-    height: fit-content; 
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
 }
 
 .footer__rodape{
+    padding-left: 5vw;
+    padding-right: 5vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: fit-content; 
     justify-content: center;
-    font-size: 3vw;
-    font-weight: bold
-
+    align-items: center;
+    font-size: 16px;
+    font-weight: 200
 }
-
-
-
-
-
 
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
 
-/*Tablet*/
-@media (min-width: 768px) {
+/*Tablet Ipad pro*/
+@media (min-width: 1024px) {
 
-/* Menu */
+/* Header(cabeçalho */
 
-/*title*/
+/*Apresentação e Redes Sociais*/
 
 /*Skills*/
 
-/*Hobbies*/
+/*Formação e cursos*/
 
-/*Experiências acadêmicas*/
+/*Projetos*/
 
-/*Expeirência profissional*/
+/*Contato*/
+
+/*Footer*/
 
 }
 
-/*Mobile*/
-@media (min-width: 425px) {
+/*Tablet */
+@media (min-width: 800px) {
 
-/*Menu*/
 
-/*Titulo*/
+/* Header(cabeçalho */
 
-/*Sessão sobre*/
+/*Apresentação e Redes Sociais*/
 
 /*Skills*/
 
-/*Hobbies*/
- 
-/*Formação Acadêmica*/
+/*Formação e cursos*/
 
-/*Experiência Profissional*/
+/*Projetos*/
 
- /*Contato*/
+/*Contato*/
 
 /*Footer*/
+
+}
+
+@media (min-width:500px) {
+
+    
+/* Header(cabeçalho */
+
+/*Apresentação e Redes Sociais*/
+
+/*Skills*/
+
+/*Formação e cursos*/
+
+/*Projetos*/
+
+/*Contato*/
+
+/*Footer*/
+
+
+
+
+
+
+
 
 }
