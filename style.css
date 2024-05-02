@@ -185,7 +185,7 @@ section.about{
     padding-bottom: 1.5vw;
     display: flex;
     flex-direction: column;
-    padding-bottom: 40px;
+
     width: 100vw;
 }
 .about__title{
@@ -333,18 +333,19 @@ section.experience{
     gap: 60px;
     flex-wrap: wrap;    
     padding-bottom: 40px;
-    padding-left: 10vw;
+    padding-left: 16vw;
     padding-top: 5vw;   
 }
 
-.experience__section__title{
-    padding-bottom: 1.5rem;
+.experience__section__title{ 
+
     font-size: 23px;
     font-weight: 300;
 } 
 
 
 .experience__box__container{
+    padding-left: 16vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
