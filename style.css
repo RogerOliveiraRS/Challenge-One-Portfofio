@@ -9,6 +9,7 @@ body {
     color: #ECF3FF;
     line-height: 1.5;
     letter-spacing: 0.03em;
+    align-items: center;
 }
 
 ol, li {
@@ -100,6 +101,7 @@ section.title{
     padding-bottom: 120px;  
     color: #ECF3FF; 
     background-color: #021635; 
+    align-items: center;
 }
 
 .title{
@@ -185,9 +187,10 @@ section.about{
     padding-bottom: 1.5vw;
     display: flex;
     flex-direction: column;
-
     width: 100vw;
+    align-items: center;
 }
+
 .about__title{
     font-size: 23px;
     font-weight: 300;
@@ -208,15 +211,17 @@ section.about{
 
 /*Sessão Skills*/
 section.skills{
+
     padding-left: 16vw;
     padding-top: 100px;
-    width:70vw;
     padding-bottom: 80px;
+    width:70vw;
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap; 
-    padding-bottom: 5vw;
     width: auto;
+
+
 }
 
 .skills__title{
@@ -231,7 +236,7 @@ section.skills{
     flex-wrap: wrap;
     row-gap: 5vw;
     column-gap: 20px;
-    align-items: baseline; /* Alinhe na linha de base */
+    align-items: center; /* Alinhe na linha de base */
     padding-right: 15vw;
 }
 
@@ -393,6 +398,10 @@ section.experience{
     padding-bottom: 20px;
 }
 
+button{
+    border-radius: 0.25rem;
+}
+
 .experiencia__botao--repo {
     background-color: #007bff; 
     color: #ECF3FF; 
@@ -444,28 +453,38 @@ section.experience{
 
 /*Contato*/
 section.formcontato{
-    width: 100vw;
+
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
+}
+
+.formcontato__title{
+
+    padding-top: 1.8rem ;
+    padding-left: 16vw;
+    padding-bottom: 1.8rem;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.formcontato__container{
+    align-items: center;
+    padding-left: 16vw;
+    padding-right: 16vw;
+    align-items: center;
+
 }
 
 .formcontato__contacto {
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
-    padding-left: 10vw;
-    padding-right: 10vw;
+
     padding-top: 40px;
-    width: 70%; /* Defina a largura desejada */
+
     background-color: #022256;
     border-radius: 0.5rem;
-}
-
-.formcontato__title{
-    padding-bottom: 1.8rem;
-    font-size: 23px;
-    font-weight: 300;
 }
 
 .formcontato__text {
@@ -475,8 +494,14 @@ section.formcontato{
 }
 
 .formcontato__subtext{
-    font-size: 1.5vw;
+    font-size: 16px;
     padding-bottom: 16px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.formcontato__form{
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .formcontato__input,
