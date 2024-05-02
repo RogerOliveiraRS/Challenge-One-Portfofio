@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+    <!DOCTYPE html>
+<html lang="pt">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Folha de estilo de CSS Linkado -->
     <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -38,35 +41,38 @@
     <div class="section-divider"></div>
 
 <!-- Sessão Apresentação e Redes Sociais -->
-    <section class="title"    id="sobremim">
+    <section class="title" id="sobremim">
         <div class="title__div">
             <img class="title__profile" src="assets\selfie.png">
-
+    
             <div class="title__container">
-                <h2 class="title__bio">Olá, meu nome é Roger Oliveira e construo páginas web</h2>
+                <div class="title__bio">Olá, meu nome é Roger Oliveira e construo páginas web</div>
                 <div class="title__subsection">Sou formado em Design da Experiência do Usuário e em Data Analytics pela Google,  
                    e atualmente estou no projeto Oracle ONE como aluno do curso de Desenvolvedor Front-End.
                 </div> 
-            
-                    <div class="links">                       
-                        <ul class="links__network">
-                            <!-- Ponha os links de suas redes sociais favoritas -->
-                            <li class="links__network__item"><a href="https://drive.google.com/file/d/1ukv-6z7uecb7-JjRYQ0AyBhHBLRLm6Rb/view">Curriculo <img src="assets\cv.png"></a></li>
-                            <li class="links__network__item"><a href="https://github.com/rogeroliveirars">Github <img src="assets\github_3.png"> </a></li>
-                            <li class="links__network__item"><a href="www.linkedin.com/in/uxrogeroliveira">Linkedin <img src="assets\linkedin.png"></a></li>
-                            <li class="links__network__item"><a href="http://www.instagram.com/rogeroliveira_ux">Instagram <img src="assets\insta.png"></a></li>
-                        </ul>
-                    </div>    
             </div>
         </div>
+        
+        <div class="links">                       
+            <ul class="links__network">
+                <!-- Ponha os links de suas redes sociais favoritas -->
+                <li class="links__network__item"><a href="https://drive.google.com/file/d/1ukv-6z7uecb7-JjRYQ0AyBhHBLRLm6Rb/view">Curriculo <img src="assets\cv.png"></a></li>
+                <li class="links__network__item"><a href="https://github.com/rogeroliveirars">Github <img src="assets\github_3.png"> </a></li>
+                <li class="links__network__item"><a href="www.linkedin.com/in/uxrogeroliveira">Linkedin <img src="assets\linkedin.png"></a></li>
+                <li class="links__network__item"><a href="http://www.instagram.com/rogeroliveira_ux">Instagram <img src="assets\insta.png"></a></li>
+            </ul>
+        </div>    
     </section>
+    
+    
+    
 
     <div class="section-divider"></div>
 
         <!-- Sessão sobre mim -->
     <section class="about">
         <div class="about__container" >
-            <h3 class="about__title">Sobre mim</h3>
+            <div class="about__title">Sobre mim</div>
             <p class="about__paragraph">Natural de Porto Alegre-RS, sou UX Designer certificado pela Google, e em UI/UX Designer pela CalArts-California Institute of the Arts(Disney), além do Google Professional Data Analytics Certificate. Possuo  vivência significativa em desenvolvimento e prototipagem de produtos na indústria eletrônica (automação industrial) e estou migrando para área da Tecnologia.</p>
 
                 </p>
@@ -80,7 +86,7 @@
 
 <!-- Sessão de Skills -->
     <section class="skills"   id="skills">
-        <h3 class="skills__title">Skills</h3>
+        <div class="skills__title">Skills</div>
             <div class="skills__line">
                 <div class="skills__box">
                     <ul>
@@ -98,7 +104,7 @@
                 <div class="skills__box">
                     <ul>
                         <li class="skills__img"> <img src="assets\css_color.png" alt=""> </li>
-                        <li class="skills__name">CSS</li>
+                        <li class="skills__name__">CSS</li>
                     </ul>
                 </div>
 
@@ -141,7 +147,7 @@
 
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"> <img src="assets\gimp_color.png" alt=""> </li>
+                        <li class="skills__img__7"> <img src="assets\gimp_color.png" alt=""> </li>
                         <li class="skills__name">Gimp</li>
                     </ul>
                 </div>
@@ -182,7 +188,7 @@
 
     <!-- Sessão de Formação e Cursos -->
     <section class="academic" id="formacao">
-        <h2 class="academic__title" >Formação</h2>
+        <div class="academic__title" >Formação</div>
         <div class="academic__courses">
 
             <div class="formacao__curso__box">
@@ -271,20 +277,17 @@
     <div class="section-divider"></div>
 
     <!-- Sessão de Experiência Profissional/Projetos-->
-    <section class="experience"  id="xp">
-
-    <h2 class="experience__section__title">Experiência Profissional</h2>
-    <section class="experience"  id="xp">
-
-
+    <section class="experience" id="xp">
+        
+        <div class="experience__section__title">Experiência Profissional</div>
     
+        <div class="experience__container">
             <div class="experience__box">
                 <!-- Insira a logo/captura de seu projeto/trabalho -->
                 <div class="experience__title">Portfólio</div>
                 <div class="experience__text">"Challenge Alura Portfólio"</div>
                 <img class="experience__img" src="assets/portfolio-fase-selecao.png">
                 <div class="experience__info">
-
                     <div class="experience__description">
                         <!-- Insira o link para demonstração do projeto no Github e/ou Github Pages -->
                         <span class="experience__repo"><a href="https://github.com/RogerOliveiraRS/Portfolio"><button class="experiencia__botao--repo">Repositório</button></a></span>
@@ -292,23 +295,25 @@
                     </div>
                 </div>
             </div>
-
+    
             <div class="experience__box">
                 <!-- Insira a logo/captura de seu projeto/trabalho -->
                 <div class="experience__title">Decodificador de texto</div>
                 <div class="experience__text">"Challenge Alura Codificador"</div>
                 <img class="experience__img" src="assets\encripter.png">
                 <div class="experience__info">
-
                     <div class="experience__description">
                         <!-- Insira o link para demonstração do projeto no Github e/ou Github Pages -->
                         <span class="experience__repo"><a href="https://github.com/RogerOliveiraRS/enigma-encripter"><button class="experiencia__botao--repo">Repositório</button></a></span>
                         <span class="experience__demo"><a href="https://enigma-encripter.vercel.app/"><button class="experiencia__botao--demo__2">Ir à página</button></a></span>
                     </div>
                 </div>
-            </div>
+            </div>       
         </div>
     </section>
+    
+    
+    
 
     <div class="section-divider"></div>
     
@@ -318,12 +323,12 @@
             <div  class="formcontato__contacto">
                 <div class="formcontato--esquerda"></div>
                 <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contato</h2>
-                    <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
-                    <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
+                    <div class="formcontato__title">Contato</div>
+                    <div class="formcontato__subtext">Quer entrar em contato comigo?</div>
+                    <div class="formcontato__subtext">Preencha o formulário abaixo e entrarei em contato o mais rápido possível. </div>
                     <form class="formcontato__form">
                         <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                        <input class="formcontato__input" type="email" id="email" placeholder="Email">
+         
                         <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
                         <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
                         <button class="formcontato__botao">Enviar mensagem</button>
