@@ -473,8 +473,9 @@ section.formcontato{
     margin-left: auto; /* Centralize horizontalmente */
 }
 
-.formcontato__contato__subtext{
+.formcontato__subtext{
     font-size: 1.5vw;
+    padding-bottom: 16px;
 }
 
 .formcontato__input,
