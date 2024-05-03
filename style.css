@@ -97,6 +97,7 @@ section.title{
     width: auto;
     align-items: center;
     padding-top: 50px;
+    padding-left: 14vw;
     width:100vw;
     padding-bottom: 120px;  
     color: #ECF3FF; 
@@ -104,12 +105,7 @@ section.title{
     align-items: center;
 }
 
-.title{
-    padding-left: 14vw;
-}
-
 .title__div{
-
     max-width: 70vw;
     display: flex;
     flex-direction: row-reverse;
@@ -121,6 +117,12 @@ section.title{
     width: 60%;
 }
 
+.title__profile {
+    padding-top: 33px;
+    padding-left: 8vw;
+    width: 17vw;
+    height: 17vw; }
+
 .title__bio{
     padding-bottom: 1.8rem;
     font-size: 23px;
@@ -131,12 +133,8 @@ section.title{
     font-size: 20px;
 }
 
-.title__profile {
-    padding-top: 33px;
-    padding-left: 8vw;
-    width: 17vw;
-    height: 17vw; 
-}
+
+
 
 .links{
     width: 80vw;
@@ -343,19 +341,18 @@ section.experience{
 }
 
 .experience__section__title{ 
-
     font-size: 23px;
     font-weight: 300;
 } 
 
+.experience__container{
 
-.experience__box__container{
-    padding-left: 16vw;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1 0 45%; /* Distribui igualmente o espaço disponível para as boxes */
-    margin-right: 5%;
+    justify-content: space-between;
+    row-gap: 5vw;
+    column-gap: 20px;   
+    padding-right: 15vw;
 }
 
 .experience__box{
@@ -363,6 +360,7 @@ section.experience{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: start;
+    width: 50%;
 }
 
 .experience__box img {
@@ -384,19 +382,23 @@ section.experience{
     padding-bottom: 12px;
 } 
 
-
-
 .experience__text{
+    display: flex;
+    flex-direction: row;
     padding-bottom: 12px;
 }
 
 .experience__description{
     display: flex;
-    flex-direction: wrap; 
+    flex-direction: row; 
     flex-wrap: wrap;
     gap: 19px;
     padding-bottom: 20px;
 }
+
+
+
+
 
 button{
     border-radius: 0.25rem;
@@ -754,39 +756,109 @@ utilize como referência os breakpoints @media abaixo*/
 
 @media (min-width:300px) and  (max-width:500px){
 
+    /* Cabeçalho */
     .cabecalho__menu__list{
         display: none;
     }
 
 
 
-    .title__profile{
-        width: 50vw;
-        height: auto;
-        padding-bottom: 2rem;
-    }
+    /* Apresentação e Redes Sociais*/
 
-    .title__container{
-        width: 80vw;
-     
-    }
-
-
-
-    .title{
-        padding-left: 10vw;
- 
-
-
-        
+    section.title{
+        padding-left: 10vw;   
+        padding-bottom: 70px;   
     }
 
     .title__div{
-        display:flex;
+        display:wrap;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: wrap;       
     }
 
+    .title__profile{
+        width: 50vw;
+        height: auto;
+    }
+
+
+    .title__container{
+        padding-top: 2rem;
+        padding: right 2vw;     
+        flex-direction:column;
+        display: wrap;
+        width: 80vw;
+    }
+
+    .title__bio{
+
+        font-size: 20px;
+    }
+
+
+    .title__subsection{
+        font-size: 17px;
+    }
+    /* Sobre Mim*/
+
+    .about__paragraph{
+        font-size: 17px;
+        width: 80wv;
+    }
+
+    .about__container{
+        padding-top: 40px;
+    }
+
+    /* Skills */
+
+    section.skills{
+        padding-left: 16vw;
+        padding-top:60px;
+        padding-bottom: 80px;
+
+        display: flex;
+        flex-direction: column; 
+        flex-wrap: wrap; 
+        width: auto;
+
+    }
+
+
+
+
+
+
+
+
+
+    /*Projetos */
+    .experience__title{
+        white-space: nowrap;
+    }
+
+    .experience__container{
+        /*display: flex;
+        justify-content: space-between;*/
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 5vw;
+        column-gap: 20px;       
+    
+    }
+
+    .experience__buttons{
+        display: wrap;
+        flex-direction: row;
+        white-space: nowrap;
+    }
+ 
+    .experience__text{
+    display: flex;
+    white-space: nowrap;
+    }
 
 
 /* Header(cabeçalho */
